@@ -116,7 +116,7 @@ export default function Portfolio() {
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-8">Education</h2>
           <ul className="space-y-4 text-gray-300">
-            <li><strong>B.Tech (2023–2027)</strong> – NSRIT (CGPA: 7.1)</li>
+            <li><strong>B.Tech (2023–2027)</strong> – NSRIT </li>
             <li><strong>Intermediate</strong> – Sri Chaitanya Junior College</li>
             <li><strong>SSC</strong> – Sri Chaitanya Techno School</li>
           </ul>
