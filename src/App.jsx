@@ -44,7 +44,7 @@ export default function Portfolio() {
         <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div>
-            <h1 className="text-5xl font-bold mb-4">Sai Saketh Musti</h1>
+            <h1 className="text-5xl font-bold mb-4">M Sai Saketh</h1>
             <p className="text-lg text-gray-300 mb-4">
               Software Developer | Java | Python | Full Stack
             </p>
