@@ -87,7 +87,7 @@ export default function Portfolio() {
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-8">Skills</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {["Java", "Python", "Full Stack Development", "MySQL", "MongoDB", "HTML", "CSS", "JavaScript", "Tailwind CSS", "Data Analysis"].map(
+            {["Java", "Python developer", "HTML", "CSS", "React","cyber security analyst" ].map(
               (skill) => (
                 <div
                   key={skill}
