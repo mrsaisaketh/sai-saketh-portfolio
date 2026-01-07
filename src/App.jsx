@@ -15,16 +15,11 @@ export default function Portfolio() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .send(
         "service_zjb3glf",
         "template_05mk1yc",
-        {
-          user_email: form.user_email,
-          user_phone: form.user_phone,
-          message: form.message,
-        },
+        form,
         "sN7zS1nfzXjES987y"
       )
       .then(() => {
@@ -32,36 +27,37 @@ export default function Portfolio() {
         setOpen(false);
         setForm({ user_email: "", user_phone: "", message: "" });
       })
-      .catch(() => {
-        alert("Failed to send message ❌");
-      });
+      .catch(() => alert("Failed to send message ❌"));
   };
 
   return (
-    <div className="min-h-screen bg-slate-900 text-white font-sans">
-      {/* HERO SECTION */}
+    <div className="relative min-h-screen text-white font-sans overflow-hidden bg-[#0b0f1a]">
+      {/* PREMIUM BACKGROUND */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute -top-40 -left-40 w-[600px] h-[600px] bg-indigo-600/20 rounded-full blur-3xl" />
+        <div className="absolute top-1/3 -right-40 w-[600px] h-[600px] bg-purple-600/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-1/3 w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-3xl" />
+      </div>
+
+      {/* HERO */}
       <section className="min-h-screen flex items-center justify-center px-6">
         <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
-          {/* Text Content */}
           <div>
             <h1 className="text-5xl font-bold mb-4">M Sai Saketh</h1>
             <p className="text-lg text-gray-300 mb-4">
-              Software Developer | Java | Python | Full Stack
+              Software Developer | Java | Python | Cyber Security
             </p>
-            <p className="text-gray-400 max-w-xl">
+            <p className="text-gray-400 max-w-xl leading-relaxed">
               Detail-oriented and versatile software developer with strong
               proficiency in Java and Python, experienced in full stack
               development, database management, and data analysis.
             </p>
           </div>
 
-          {/* PHOTO FRAME */}
+          {/* PHOTO */}
           <div className="flex justify-center md:justify-end">
             <div className="relative">
-              {/* Frame */}
-              <div className="absolute inset-0 rounded-2xl border-4 border-indigo-500 translate-x-3 translate-y-3" />
-
-              {/* Photo */}
+              <div className="absolute inset-0 rounded-2xl border border-indigo-500/40 translate-x-3 translate-y-3" />
               <img
                 src="/sai-saketh.jpg"
                 alt="Sai Saketh"
@@ -73,9 +69,9 @@ export default function Portfolio() {
       </section>
 
       {/* ABOUT */}
-      <section className="max-w-5xl mx-auto px-6 py-20">
-        <h2 className="text-3xl font-bold mb-4">About Me</h2>
-        <p className="text-gray-300 leading-relaxed">
+      <section className="max-w-5xl mx-auto px-6 py-24">
+        <h2 className="text-3xl font-semibold mb-4">About Me</h2>
+        <p className="text-gray-300 leading-relaxed max-w-3xl">
           I am currently pursuing my 3rd year B.Tech at Nadimpalli Sathayanarayana
           Raju Institute of Technology (NSRIT). I enjoy building innovative
           applications and working on real-world problem-solving projects.
@@ -83,15 +79,15 @@ export default function Portfolio() {
       </section>
 
       {/* SKILLS */}
-      <section className="bg-slate-800 py-20">
+      <section className="py-24">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-8">Skills</h2>
+          <h2 className="text-3xl font-semibold mb-10">Skills</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {["Java", "Python developer", "HTML", "CSS", "React","cyber security analyst" ].map(
+            {["Java", "Python Development", "Full Stack", "MySQL", "HTML", "CSS", "Cyber Security"].map(
               (skill) => (
                 <div
                   key={skill}
-                  className="bg-slate-700 rounded-xl p-4 text-center hover:bg-slate-600 transition"
+                  className="rounded-xl px-4 py-3 text-center bg-white/5 backdrop-blur hover:bg-white/10 transition"
                 >
                   {skill}
                 </div>
@@ -102,28 +98,28 @@ export default function Portfolio() {
       </section>
 
       {/* PROJECTS */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
-        <h2 className="text-3xl font-bold mb-10">Projects</h2>
+      <section className="max-w-6xl mx-auto px-6 py-24">
+        <h2 className="text-3xl font-semibold mb-12">Projects</h2>
         <div className="grid md:grid-cols-3 gap-8">
-          <Project title="Doctorly" desc="Telemedicine platform with real-time video consultations." />
-          <Project title="V-Mirror" desc="Virtual trial room with body size detection and outfit recommendations." />
+          <Project title="Doctorly" desc="Telemedicine platform with real-time consultations." />
+          <Project title="V-Mirror" desc="Virtual trial room with body size detection and recommendations." />
           <Project title="Agree the Culture" desc="AI-driven crop recommendation platform for farmers." />
         </div>
       </section>
 
       {/* EDUCATION */}
-      <section className="bg-slate-800 py-20">
+      <section className="py-24">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-8">Education</h2>
+          <h2 className="text-3xl font-semibold mb-8">Education</h2>
           <ul className="space-y-4 text-gray-300">
-            <li><strong>B.Tech (2023–2027)</strong> – NSRIT </li>
-            <li><strong>Intermediate</strong> – Sri Chaitanya Junior College</li>
-            <li><strong>SSC</strong> – Sri Chaitanya Techno School</li>
+            <li><strong>B.Tech (2023–2027)</strong> — NSRIT (CGPA: 7.1)</li>
+            <li><strong>Intermediate</strong> — Sri Chaitanya Junior College</li>
+            <li><strong>SSC</strong> — Sri Chaitanya Techno School</li>
           </ul>
         </div>
       </section>
 
-      {/* CONTACT BUTTON */}
+      {/* CONTACT */}
       <section className="py-24 flex justify-center">
         <button
           onClick={() => setOpen(true)}
@@ -136,12 +132,46 @@ export default function Portfolio() {
       {/* CONTACT MODAL */}
       {open && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70">
-          <div className="bg-slate-900 rounded-2xl p-8 w-[90%] max-w-md">
-            <h3 className="text-2xl font-bold mb-4">Contact Me</h3>
+          <div className="bg-[#0f1424] rounded-2xl p-8 w-[90%] max-w-md">
+            <h3 className="text-2xl font-semibold mb-2">Contact Me</h3>
+            <p className="text-sm text-gray-400 mb-4">
+              Prefer LinkedIn?
+              <a
+                href="https://www.linkedin.com/in/sai-saketh-2b97a6336/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-1 text-indigo-400 underline"
+              >
+                Reach me there
+              </a>
+            </p>
             <form onSubmit={sendEmail} className="space-y-4">
-              <input type="email" name="user_email" placeholder="Your Email" required value={form.user_email} onChange={handleChange} className="w-full p-3 rounded-lg bg-slate-800" />
-              <input type="text" name="user_phone" placeholder="Contact Number" required value={form.user_phone} onChange={handleChange} className="w-full p-3 rounded-lg bg-slate-800" />
-              <textarea name="message" placeholder="Your Message" rows="4" required value={form.message} onChange={handleChange} className="w-full p-3 rounded-lg bg-slate-800" />
+              <input
+                type="email"
+                name="user_email"
+                placeholder="Your Email"
+                required
+                value={form.user_email}
+                onChange={handleChange}
+                className="w-full p-3 rounded-lg bg-white/5"
+              />
+              <input
+                type="text"
+                name="user_phone"
+                placeholder="Contact Number"
+                value={form.user_phone}
+                onChange={handleChange}
+                className="w-full p-3 rounded-lg bg-white/5"
+              />
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Your Message"
+                required
+                value={form.message}
+                onChange={handleChange}
+                className="w-full p-3 rounded-lg bg-white/5"
+              />
               <div className="flex justify-between items-center">
                 <button type="button" onClick={() => setOpen(false)} className="text-gray-400">Cancel</button>
                 <button type="submit" className="px-6 py-2 rounded-full bg-indigo-600">Send</button>
@@ -151,7 +181,7 @@ export default function Portfolio() {
         </div>
       )}
 
-      <footer className="text-center py-8 text-gray-500 text-sm">
+      <footer className="text-center py-10 text-gray-500 text-sm">
         © 2025 Sai Saketh Musti
       </footer>
     </div>
@@ -160,7 +190,7 @@ export default function Portfolio() {
 
 function Project({ title, desc }) {
   return (
-    <div className="bg-slate-800 rounded-2xl p-6 hover:bg-slate-700 transition">
+    <div className="rounded-2xl p-6 bg-white/5 backdrop-blur hover:bg-white/10 transition">
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-gray-300">{desc}</p>
     </div>
