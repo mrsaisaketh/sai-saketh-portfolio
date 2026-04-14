@@ -23,11 +23,11 @@ export default function Portfolio() {
         "sN7zS1nfzXjES987y"
       )
       .then(() => {
-        alert("Message sent successfully 🚀");
+        alert("Message sent successfully ");
         setOpen(false);
         setForm({ user_email: "", user_phone: "", message: "" });
       })
-      .catch(() => alert("Failed to send message ❌"));
+      .catch(() => alert("Failed to send message "));
   };
 
   return (
@@ -45,7 +45,7 @@ export default function Portfolio() {
           <div>
             <h1 className="text-5xl font-bold mb-4">M Sai Saketh</h1>
             <p className="text-lg text-gray-300 mb-4">
-              Software Developer | Java | Python | Cyber Security
+              Software Developer | Java | Python | Cyber Security | Devops | Full-Stack Developer
             </p>
             <p className="text-gray-400 max-w-xl leading-relaxed">
               Detail-oriented and versatile software developer with strong
@@ -72,9 +72,12 @@ export default function Portfolio() {
       <section className="max-w-5xl mx-auto px-6 py-24">
         <h2 className="text-3xl font-semibold mb-4">About Me</h2>
         <p className="text-gray-300 leading-relaxed max-w-3xl">
-          I am currently pursuing my 3rd year B.Tech at Nadimpalli Sathayanarayana
-          Raju Institute of Technology (NSRIT). I enjoy building innovative
-          applications and working on real-world problem-solving projects.
+         I’m a Computer Science Engineering student at NSRIT with a strong passion for full-stack development, AI, cybersecurity, and blockchain technologies.
+        I enjoy building innovative and user-focused applications, with hands-on experience in projects like AI-powered certificate verification, telemedicine platforms, and virtual trial rooms.
+          My technical foundation includes Python, Java, JavaScript, HTML, CSS, React, and cloud-based development workflows. Along with development, 
+          I actively participate in hackathons and have led large student tech communities, which strengthened my leadership and problem-solving skills. 
+          I’m driven by the goal of creating impactful digital solutions that solve real-world problems. 
+
         </p>
       </section>
 
@@ -83,7 +86,7 @@ export default function Portfolio() {
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-semibold mb-10">Skills</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {["Java", "Python Development", "Full Stack", "MySQL", "HTML", "CSS", "Cyber Security"].map(
+            {["Java", "Python Development", "Full Stack", "MySQL", "HTML", "CSS", "Cyber Security, Flutter,"].map(
               (skill) => (
                 <div
                   key={skill}
@@ -104,6 +107,8 @@ export default function Portfolio() {
           <Project title="Doctorly" desc="Telemedicine platform with real-time consultations." />
           <Project title="V-Mirror" desc="Virtual trial room with body size detection and recommendations." />
           <Project title="Agree the Culture" desc="AI-driven crop recommendation platform for farmers." />
+            <Project title="CertiGuard" desc="AI-driven academic Certificate verification proccess, It will detect the wheather the certificate is original or fake. and stores the data in the DB which was highly secured with Blockchaiin Smartcontracts." />
+         <Project title="Javers-AI" desc="AI-driven Smart Automachine with complete access of system. It use to take command with Voice,Actions,Text, & Sign language also." />
         </div>
       </section>
 
@@ -112,7 +117,7 @@ export default function Portfolio() {
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-semibold mb-8">Education</h2>
           <ul className="space-y-4 text-gray-300">
-            <li><strong>B.Tech (2023–2027)</strong> — NSRIT (CGPA: 7.1)</li>
+            <li><strong>B.Tech (2023–2027)</strong> — NSRIT (CGPA: 7.29)</li>
             <li><strong>Intermediate</strong> — Sri Chaitanya Junior College</li>
             <li><strong>SSC</strong> — Sri Chaitanya Techno School</li>
           </ul>
