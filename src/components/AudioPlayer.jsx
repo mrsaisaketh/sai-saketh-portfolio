@@ -10,30 +10,45 @@ export default function AudioPlayer() {
     const audio = audioRef.current;
     if (!audio) return;
 
-    // Attempt automatic playback on load
-    const attemptAutoplay = () => {
+    let hasStarted = false;
+
+    const startPlayback = () => {
+      if (hasStarted) return;
       audio.play()
         .then(() => {
           setIsPlaying(true);
+          hasStarted = true;
+          removeListeners();
         })
-        .catch(() => {
-          // Autoplay blocked by browser policy; start on first user interaction
-          setIsPlaying(false);
-          const handleFirstTouch = () => {
-            audio.play()
-              .then(() => setIsPlaying(true))
-              .catch((err) => console.log('Audio playback interaction error:', err));
-            window.removeEventListener('click', handleFirstTouch);
-            window.removeEventListener('touchstart', handleFirstTouch);
-            window.removeEventListener('keydown', handleFirstTouch);
-          };
-          window.addEventListener('click', handleFirstTouch, { once: true });
-          window.addEventListener('touchstart', handleFirstTouch, { once: true });
-          window.addEventListener('keydown', handleFirstTouch, { once: true });
+        .catch((err) => {
+          // Autoplay blocked by browser policy until gesture
+          console.log('Autoplay waiting for user gesture...', err);
         });
     };
 
-    attemptAutoplay();
+    const handleUserGesture = () => {
+      startPlayback();
+    };
+
+    const removeListeners = () => {
+      window.removeEventListener('click', handleUserGesture);
+      window.removeEventListener('touchstart', handleUserGesture);
+      window.removeEventListener('pointerdown', handleUserGesture);
+      window.removeEventListener('keydown', handleUserGesture);
+      window.removeEventListener('scroll', handleUserGesture);
+    };
+
+    // 1. Try initial autoplay immediately
+    startPlayback();
+
+    // 2. Attach immediate user interaction listeners on window
+    window.addEventListener('click', handleUserGesture);
+    window.addEventListener('touchstart', handleUserGesture);
+    window.addEventListener('pointerdown', handleUserGesture);
+    window.addEventListener('keydown', handleUserGesture);
+    window.addEventListener('scroll', handleUserGesture);
+
+    return () => removeListeners();
   }, []);
 
   const togglePlay = () => {
