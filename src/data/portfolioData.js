@@ -14,7 +14,7 @@ export const personalInfo = {
   phone: "+91 7981283915",
   location: "Visakhapatnam, Andhra Pradesh, India",
   github: "https://github.com/mrsaisaketh",
-  linkedin: "https://linkedin.com/in/mrsaisaketh",
+  linkedin: "https://www.linkedin.com/in/sai-saketh-2b97a6336",
   website: "https://sai-saketh.vercel.app",
   resumeUrl: "#resume",
   availableForHire: true,
@@ -24,7 +24,7 @@ export const stats = [
   { label: "Hackathons Participated", value: "10+", icon: "Trophy" },
   { label: "Ideathon Rank", value: "1st", suffix: " Winner", icon: "Award" },
   { label: "Hackathon Participants Lead", value: "576+", icon: "Users" },
-  { label: "Key Projects Developed", value: "4+", icon: "Code2" },
+  { label: "Key Projects Developed", value: "7+", icon: "Code2" },
 ];
 
 export const internships = [
@@ -171,7 +171,7 @@ export const skills = [
   { name: "Java", category: "languages", level: 85, icon: "FaJava", color: "#007396" },
   { name: "JavaScript (ES6+)", category: "languages", level: 90, icon: "SiJavascript", color: "#F7DF1E" },
   { name: "HTML5 / CSS3", category: "languages", level: 95, icon: "SiHtml5", color: "#E34F26" },
-  { name: "SQL (MySQL)", category: "languages", level: 85, icon: "SiMysql", color: "#4479A1" },
+  { name: "SQL (MySQL / PHP)", category: "languages", level: 85, icon: "SiMysql", color: "#4479A1" },
 
   // Frontend
   { name: "React.js", category: "frontend", level: 90, icon: "SiReact", color: "#61DAFB" },
@@ -214,8 +214,8 @@ export const projects = [
     featured: true,
     image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1000&auto=format&fit=crop",
     tech: ["Cybersecurity", "Blockchain", "Python", "MongoDB", "AI Analysis", "React"],
-    github: "https://github.com/mrsaisaketh/CertiGuard",
-    demo: "https://certiguard.demo",
+    github: "https://github.com/mrsaisaketh/CertiGurd",
+    demo: "https://github.com/mrsaisaketh/CertiGurd",
     highlights: [
       "AI-driven optical authenticity inspection for tampered text & signatures",
       "Blockchain cryptographic ledger hashing for permanent proof of record",
@@ -223,20 +223,20 @@ export const projects = [
     ]
   },
   {
-    id: "doctorly",
-    title: "Doctorly - Telemedicine Consultation Platform",
-    shortDescription: "Online telemedicine portal with real-time WebRTC video calling and end-to-end encrypted consultations.",
-    description: "Doctorly is an intuitive online healthcare platform bridging patients with medical professionals. It features low-latency WebRTC video appointments, real-time chat, appointment scheduling, and secure digital prescription sharing.",
-    category: "web",
+    id: "javers-ai",
+    title: "Javers-AI - Autonomous System Handling Agent",
+    shortDescription: "An AI-driven autonomous agent built for complete system handling, task automation, and intelligent execution.",
+    description: "Javers-AI is an intelligent system agent engineered in Python that handles automated system actions, command execution, and workflow orchestration using modern generative AI decision pipelines.",
+    category: "ai",
     featured: true,
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1000&auto=format&fit=crop",
-    tech: ["WebRTC", "JavaScript", "Python", "HTML/CSS", "Node.js", "Express"],
-    github: "https://github.com/mrsaisaketh/Doctorly",
-    demo: "https://doctorly.demo",
+    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop",
+    tech: ["Python", "Generative AI", "AI Agents", "System Automation", "NLP"],
+    github: "https://github.com/mrsaisaketh/Javers-AI",
+    demo: "https://github.com/mrsaisaketh/Javers-AI",
     highlights: [
-      "Peer-to-peer high quality WebRTC live video consultation room",
-      "Encrypted patient-doctor messaging channel and file transfer",
-      "Interactive doctor availability calendar and instant booking system"
+      "Autonomous agent architecture for system-level control & task execution",
+      "Natural language intent parsing for automated shell & system operations",
+      "Real-time decision processing and multi-tool orchestration"
     ]
   },
   {
@@ -248,8 +248,8 @@ export const projects = [
     featured: true,
     image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1000&auto=format&fit=crop",
     tech: ["Python", "OpenCV", "Generative AI", "Computer Vision", "React"],
-    github: "https://github.com/mrsaisaketh/V-Mirror",
-    demo: "https://v-mirror.demo",
+    github: "https://github.com/mrsaisaketh",
+    demo: "https://github.com/mrsaisaketh",
     highlights: [
       "Real-time webcam body landmark detection using OpenCV models",
       "Dynamic clothing overlay alignment matching user movement",
@@ -262,15 +262,67 @@ export const projects = [
     shortDescription: "Cloud-ready Library cataloging system with automated CI/CD deployment, containerization, and user portal.",
     description: "Engineered as part of the APSSDC Cloud Computing & DevOps internship. Features comprehensive book inventory management, automated loan tracking, role-based access control, and Docker containerized deployment.",
     category: "web",
-    featured: false,
+    featured: true,
     image: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1000&auto=format&fit=crop",
-    tech: ["Python", "SQL", "DevOps", "Docker", "Git", "HTML/CSS"],
+    tech: ["PHP", "SQL", "DevOps", "Docker", "Git", "HTML/CSS"],
     github: "https://github.com/mrsaisaketh/Library-Management-System",
-    demo: "https://library-system.demo",
+    demo: "https://github.com/mrsaisaketh/Library-Management-System",
     highlights: [
       "Dockerized container setup for frictionless cloud deployment",
       "Optimized SQL database query pipeline for book search & loans",
       "Role-based authorization for librarian admins and student users"
     ]
+  },
+  {
+    id: "binance-trading-bot",
+    title: "Binance Crypto Trading Bot",
+    shortDescription: "Algorithmic crypto trading bot integrating real-time market tracking, technical indicators, and automated trade execution.",
+    description: "An automated algorithmic trading bot designed for Binance. Built with Python, it connects to market APIs to analyze live price data, evaluate indicators, and execute trades automatically with custom risk management limits.",
+    category: "ai",
+    featured: false,
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1000&auto=format&fit=crop",
+    tech: ["Python", "Binance API", "Algorithmic Trading", "Data Analytics", "Financial Tech"],
+    github: "https://github.com/mrsaisaketh/binance-trading-bot",
+    demo: "https://github.com/mrsaisaketh/binance-trading-bot",
+    highlights: [
+      "Real-time ticker monitoring and automated buy/sell signal calculation",
+      "Direct integration with Binance REST & WebSocket endpoints",
+      "Customizable risk rules including stop-loss and profit target execution"
+    ]
+  },
+  {
+    id: "social-lead-agent",
+    title: "Social Lead AI Agent",
+    shortDescription: "AI agent designed to monitor social feeds, analyze buyer intent, and capture actionable business leads.",
+    description: "Social Lead Agent is an AI-powered lead discovery tool built in Python. It scans social channels for target keywords and discussion threads, applying natural language processing to identify high-intent prospects for automated outreach.",
+    category: "ai",
+    featured: false,
+    image: "https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=1000&auto=format&fit=crop",
+    tech: ["Python", "AI Agents", "Social Media APIs", "Lead Generation", "NLP"],
+    github: "https://github.com/mrsaisaketh/social-lead-agent",
+    demo: "https://github.com/mrsaisaketh/social-lead-agent",
+    highlights: [
+      "Automated keyword & topic monitoring across target platforms",
+      "Intent detection algorithm to qualify prospect leads",
+      "Structured lead tracking dashboard and export pipelines"
+    ]
+  },
+  {
+    id: "shortlink-app",
+    title: "ShortLink - Fast URL Shortening Service",
+    shortDescription: "Lightweight URL shortener application offering fast link compression, custom aliases, and click tracking.",
+    description: "ShortLink is a modern web application for instant URL shortening. Built with JavaScript and Node.js, it supports vanity URLs, quick redirection, and simple click analytics.",
+    category: "web",
+    featured: false,
+    image: "https://images.unsplash.com/photo-1557853197-aefb550b6fdc?q=80&w=1000&auto=format&fit=crop",
+    tech: ["JavaScript", "Node.js", "Express", "REST API", "HTML/CSS"],
+    github: "https://github.com/mrsaisaketh/shortlink-app",
+    demo: "https://github.com/mrsaisaketh/shortlink-app",
+    highlights: [
+      "Collision-resistant hash generation for instant short link creation",
+      "Custom alias support for branded short links",
+      "Fast request routing and click analytics counter"
+    ]
   }
 ];
+
