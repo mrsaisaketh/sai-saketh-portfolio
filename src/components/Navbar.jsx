@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Code2, Send } from 'lucide-react';
+import AudioPlayer from './AudioPlayer';
 
 const navLinks = [
   { name: 'About', href: '#about' },
@@ -58,15 +59,17 @@ export default function Navbar() {
           })}
         </nav>
 
-        <div className="hidden md:flex items-center gap-3">
-          <a href="#contact" className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white font-bold text-xs uppercase tracking-wider hover:opacity-95 shadow-glow-primary flex items-center gap-2">
-            <Send className="w-3.5 h-3.5" /> Contact
-          </a>
+        <div className="flex items-center gap-3">
+          <AudioPlayer />
+          <div className="hidden md:flex items-center">
+            <a href="#contact" className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white font-bold text-xs uppercase tracking-wider hover:opacity-95 shadow-glow-primary flex items-center gap-2">
+              <Send className="w-3.5 h-3.5" /> Contact
+            </a>
+          </div>
+          <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden p-2.5 rounded-xl bg-white border border-slate-200 text-slate-700 shadow-sm" aria-label="Toggle menu">
+            {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
-
-        <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden p-2.5 rounded-xl bg-white border border-slate-200 text-slate-700 shadow-sm" aria-label="Toggle menu">
-          {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
       </div>
 
       <AnimatePresence>
