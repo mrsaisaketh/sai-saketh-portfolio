@@ -24,7 +24,7 @@ export const stats = [
   { label: "Hackathons Participated", value: "10+", icon: "Trophy" },
   { label: "Ideathon Rank", value: "1st", suffix: " Winner", icon: "Award" },
   { label: "Hackathon Participants Lead", value: "576+", icon: "Users" },
-  { label: "Key Projects Developed", value: "7+", icon: "Code2" },
+  { label: "Key Projects Developed", value: "6+", icon: "Code2" },
 ];
 
 export const internships = [
@@ -271,23 +271,6 @@ export const projects = [
       "Dockerized container setup for frictionless cloud deployment",
       "Optimized SQL database query pipeline for book search & loans",
       "Role-based authorization for librarian admins and student users"
-    ]
-  },
-  {
-    id: "binance-trading-bot",
-    title: "Binance Crypto Trading Bot",
-    shortDescription: "Algorithmic crypto trading bot integrating real-time market tracking, technical indicators, and automated trade execution.",
-    description: "An automated algorithmic trading bot designed for Binance. Built with Python, it connects to market APIs to analyze live price data, evaluate indicators, and execute trades automatically with custom risk management limits.",
-    category: "ai",
-    featured: false,
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1000&auto=format&fit=crop",
-    tech: ["Python", "Binance API", "Algorithmic Trading", "Data Analytics", "Financial Tech"],
-    github: "https://github.com/mrsaisaketh/binance-trading-bot",
-    demo: "https://github.com/mrsaisaketh/binance-trading-bot",
-    highlights: [
-      "Real-time ticker monitoring and automated buy/sell signal calculation",
-      "Direct integration with Binance REST & WebSocket endpoints",
-      "Customizable risk rules including stop-loss and profit target execution"
     ]
   },
   {
