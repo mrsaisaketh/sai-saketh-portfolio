@@ -215,7 +215,6 @@ export const projects = [
     image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=1000&auto=format&fit=crop",
     tech: ["Cybersecurity", "Blockchain", "Python", "MongoDB", "AI Analysis", "React"],
     github: "https://github.com/mrsaisaketh/CertiGurd",
-    demo: "https://github.com/mrsaisaketh/CertiGurd",
     highlights: [
       "AI-driven optical authenticity inspection for tampered text & signatures",
       "Blockchain cryptographic ledger hashing for permanent proof of record",
@@ -232,7 +231,6 @@ export const projects = [
     image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop",
     tech: ["Python", "Generative AI", "AI Agents", "System Automation", "NLP"],
     github: "https://github.com/mrsaisaketh/Javers-AI",
-    demo: "https://github.com/mrsaisaketh/Javers-AI",
     highlights: [
       "Autonomous agent architecture for system-level control & task execution",
       "Natural language intent parsing for automated shell & system operations",
@@ -249,7 +247,6 @@ export const projects = [
     image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1000&auto=format&fit=crop",
     tech: ["Python", "OpenCV", "Generative AI", "Computer Vision", "React"],
     github: "https://github.com/mrsaisaketh",
-    demo: "https://github.com/mrsaisaketh",
     highlights: [
       "Real-time webcam body landmark detection using OpenCV models",
       "Dynamic clothing overlay alignment matching user movement",
@@ -266,7 +263,6 @@ export const projects = [
     image: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1000&auto=format&fit=crop",
     tech: ["PHP", "SQL", "DevOps", "Docker", "Git", "HTML/CSS"],
     github: "https://github.com/mrsaisaketh/Library-Management-System",
-    demo: "https://github.com/mrsaisaketh/Library-Management-System",
     highlights: [
       "Dockerized container setup for frictionless cloud deployment",
       "Optimized SQL database query pipeline for book search & loans",
@@ -283,7 +279,6 @@ export const projects = [
     image: "https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=1000&auto=format&fit=crop",
     tech: ["Python", "AI Agents", "Social Media APIs", "Lead Generation", "NLP"],
     github: "https://github.com/mrsaisaketh/social-lead-agent",
-    demo: "https://github.com/mrsaisaketh/social-lead-agent",
     highlights: [
       "Automated keyword & topic monitoring across target platforms",
       "Intent detection algorithm to qualify prospect leads",
@@ -300,7 +295,6 @@ export const projects = [
     image: "https://images.unsplash.com/photo-1557853197-aefb550b6fdc?q=80&w=1000&auto=format&fit=crop",
     tech: ["JavaScript", "Node.js", "Express", "REST API", "HTML/CSS"],
     github: "https://github.com/mrsaisaketh/shortlink-app",
-    demo: "https://github.com/mrsaisaketh/shortlink-app",
     highlights: [
       "Collision-resistant hash generation for instant short link creation",
       "Custom alias support for branded short links",

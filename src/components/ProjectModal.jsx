@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ExternalLink, Github, CheckCircle2, Sparkles, Code } from 'lucide-react';
+import { X, Github, CheckCircle2, Sparkles, Code } from 'lucide-react';
 
 export default function ProjectModal({ project, onClose }) {
   if (!project) return null;
@@ -34,8 +34,7 @@ export default function ProjectModal({ project, onClose }) {
               <div className="flex flex-wrap gap-1.5">{project.tech.map((t, i) => (<span key={i} className="px-2.5 py-1 text-xs font-medium rounded-lg bg-slate-100 text-slate-700 border border-slate-200">{t}</span>))}</div>
             </div>
             <div className="flex flex-wrap gap-3 pt-3 border-t border-slate-200">
-              {project.github && <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 text-white font-medium text-xs shadow"><Github className="w-4 h-4" /> Source Code</a>}
-              {project.demo && <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white font-bold text-xs shadow-glow-primary"><ExternalLink className="w-4 h-4" /> Live Demo</a>}
+              {project.github && <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 text-white font-medium text-xs shadow hover:bg-slate-800 transition-colors"><Github className="w-4 h-4" /> View Source Code on GitHub</a>}
             </div>
           </div>
         </motion.div>
